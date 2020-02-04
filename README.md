@@ -1,2 +1,2 @@
 # avatar
-know your personality
+Enter your name to know your peronality
