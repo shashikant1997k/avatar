@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="cutom.js"></script>
+    <title>Avatar</title>
+    <style>
+        .main{
+            border: 4px solid white;
+            width: 70%;
+            height: auto;
+            margin-top: 2%;
+            background-color: currentColor;
+        }
+        #imgChange{
+            max-width: 33%;
+            height: auto;
+            border: 4px solid cadetblue;
+        }
+        #name{
+            width: 32%;
+            text-align: center;
+            padding: 0.2vw;
+            font-weight: 600;
+            background: darkolivegreen;
+            color: white;
+            font-size: 1.6vw;
+        }
+        .img{
+            margin-top: 4%;
+        }
+        .submit{
+            color: white;
+            background-color: darkmagenta;
+            font-size: 1.6vw;
+            font-weight: 800;
+            font-family: cursive;
+            padding: 3px 10px;
+        }
+
+        .styled-checkbox {
+        position: absolute;
+        opacity: 0;
+        }
+        .styled-checkbox + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        }
+        .styled-checkbox + label:before {
+        content: '';
+        margin-right: 0.6vw;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 1.5vw;
+        height: 1.5vw;
+        background: white;
+        }
+        .styled-checkbox:hover + label:before {
+        background: #f35429;
+        }
+        .styled-checkbox:focus + label:before {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+        .styled-checkbox:checked + label:before {
+        background: #f35429;
+        }
+        .styled-checkbox:disabled + label {
+        color: #b8b8b8;
+        cursor: auto;
+        }
+        .styled-checkbox:disabled + label:before {
+        box-shadow: none;
+        background: #ddd;
+        }
+        .styled-checkbox:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 0.38vw;
+        top: 0.6vw;
+        background: white;
+        width: 0.18vw;
+        height: 0.22vw;
+        box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        }
+        body{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body style="background-color: darkolivegreen;">
+    <div class="container">
+        <center>
+            <div style="color: white;font-weight: 600;font-family: cursive;font-size: 2.6vw;padding-top: 1%;">Enter your name to know your personality</div>
+            <div class="main">
+                <div style="color: white;font-weight: 600;font-family: cursive;font-size:2vw;">Enter Your Name</div>
+                <div  style="margin-top: 0.7%;margin-bottom: 0.7%;display: inline-flex;">
+                    <div style="display: inline-flex;padding-right: 2.5vw;">
+                        <input class="styled-checkbox checkGender" id="checkbox-1" type="checkbox" value="value1">
+                        <label for="checkbox-1" style="color:#FFF;font-size: 1.1vw;">Male</label>
+                    </div>
+                    <div style="display: inline-flex;">
+                        <input class="styled-checkbox checkGender" id="checkbox-2" type="checkbox" value="value1">
+                        <label for="checkbox-2" style="color:#FFF;font-size: 1.1vw;">Female</label>
+                    </div>
+                    
+                </div>
+                <div>
+                    <input type="text" name="" id="name" autofocus autocomplete="off" />
+                </div>
+                <div class="img">
+                    <img src="img.png" type="text" name="" id="imgChange" />
+                </div>
+                <div class="input" style="margin-top: 2%;padding-bottom: 2%;">
+                    <button class="submit">CLICK ME</button>
+                </div>
+            </div>
+        </center>
+
+    </div>
+</body>
+</html>
